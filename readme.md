@@ -24,63 +24,89 @@
 Endpoint
 > GET https://ctechapi.hacking.global/message/
 
-Headers
+### Headers
+
 > `Messages-Matching` Phrase to limit returned messages
+
 > `Messages-From`     Earliest date from which to return matching messages
+
 > `Messages-Until`    Latest date up to which messages should be returned
+
 > `Messages-Limit`    Maximum # of Results to Return
 
-Body
+### Body
+
 `None`
 
-Note:
+## Note:
+
 If no parameters are supplied, the last 20 messages will be returned.
+
 If an invalid value is supplied for the `From` date, we will presume the start of the current day
+
 If an invalid value is supplied for the `Until` date, we will presume 'now'
+
 If the `Until` date is earlier or the same as the `From` date, we will assume `Until` is 'now'
+
 If the `Matching` parameter is invalid or too long, we will assume all matches
 
 ## Putting a Message on the Message Board
 
-Endpoint
+### Endpoint
+
 > PUT https://ctechapi.hacking.global/message/
 
-Headers
+### Headers
+
 `None`
 
-Body
+### Body
+
 Contents should be supplied in the Body of the PUT Request
 
 ## Updating a Message
 
-Endpoint
+### Endpoint
 > POST https://ctechapi.hacking.global/message/
 
-Headers
+### Headers
+
 `Message-UUID-Private` The Private UUID created when the message was created
+
 `Message-UUID-Public`  The Public UUID of the Message
 
-Body
+### Body
+
 Contents should be supplied in the Body of the POST Request
 
-Note:
+### Note:
+
 If the Private UUID does not match an existing one, it will return a 404
+
 If the Public UUID does not match an existing one, it will return a 404
+
 If the Public and Private UUIDs are not matched, it will return a 404
 
 ## Deleting a Message
 
-Endpoint
+### Endpoint
+
 > DELETE https://ctechapi.hacking.global/message/
 
-Headers
+### Headers
+
 `Message-UUID-Private` The Private UUID created when the message was created
+
 `Message-UUID-Public`  The Public UUID of the Message
 
-Body
+### Body
+
 Contents should be supplied in the Body of the POST Request
 
-Note:
+### Note:
+
 If the Private UUID does not match an existing one, it will return a 404
+
 If the Public UUID does not match an existing one, it will return a 404
+
 If the Public and Private UUIDs are not matched, it will return a 404
