@@ -82,11 +82,11 @@ Contents should be supplied in the Body of the POST Request
 
 ### Note:
 
-If the Private UUID does not match an existing one, it will return a 404
+If the `Private UUID` does not match an existing one, it will return a 404
 
-If the Public UUID does not match an existing one, it will return a 404
+If the `Public UUID` does not match an existing one, it will return a 404
 
-If the Public and Private UUIDs are not matched, it will return a 404
+If the `Public` and `Private` UUIDs are not matched, it will return a 404
 
 ## Deleting a Message
 
@@ -106,8 +106,8 @@ Contents should be supplied in the Body of the POST Request
 
 ### Note:
 
-If the Private UUID does not match an existing one, it will return a 404
+If the `Private UUID` does not match an existing one, it will return a 404
 
-If the Public UUID does not match an existing one, it will return a 404
+If the `Public UUID` does not match an existing one, it will return a 404
 
-If the Public and Private UUIDs are not matched, it will return a 404
+If the `Public` and `Private` UUIDs are not matched, it will return a 404
