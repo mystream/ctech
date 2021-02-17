@@ -16,6 +16,7 @@
 # API Approach
 
 - Parameters will be sent via `Headers` to avoid them being cached in Standard Request Logs
+- HTTP Verbs will be used to inform the server which action is required
 
 # API Usage
 
