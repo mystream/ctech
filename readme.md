@@ -71,7 +71,7 @@ If the Public and Private UUIDs are not matched, it will return a 404
 ## Deleting a Message
 
 Endpoint
-> POST https://ctechapi.hacking.global/message/
+> DELETE https://ctechapi.hacking.global/message/
 
 Headers
 `Message-UUID-Private` The Private UUID created when the message was created
