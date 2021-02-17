@@ -51,6 +51,8 @@ If the `Until` date is earlier or the same as the `From` date, we will assume `U
 
 If the `Matching` parameter is invalid or too long, we will assume all matches
 
+---
+
 ## Putting a Message on the Message Board
 
 ### Endpoint
@@ -64,6 +66,8 @@ If the `Matching` parameter is invalid or too long, we will assume all matches
 ### Body
 
 Contents should be supplied in the Body of the PUT Request
+
+---
 
 ## Updating a Message
 
@@ -87,6 +91,8 @@ If the `Private UUID` does not match an existing one, it will return a 404
 If the `Public UUID` does not match an existing one, it will return a 404
 
 If the `Public` and `Private` UUIDs are not matched, it will return a 404
+
+---
 
 ## Deleting a Message
 
