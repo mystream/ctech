@@ -1,0 +1,9 @@
+<Limit GET POST PUT DELETE>
+   Allow from all
+</Limit>
+
+# Redirect all requests to an index.php file
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
