@@ -11,7 +11,7 @@
 > https://ctechapi.hacking.global/
 
 - The Messages Endpoint is located at:
-> https://ctechapi.hacking.global/message/
+> https://ctechapi.hacking.global/
 
 # API Approach
 
